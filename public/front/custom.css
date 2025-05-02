@@ -1,0 +1,269 @@
+
+.top-header {
+    background: #014cab;
+    padding: 8px 0;
+    font-size: 14px;
+    color: #333;
+    transition: 0.4s ease-in-out;
+}
+
+.top-header a {
+    color: #333;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.top-header a:hover {
+    color: #007bff;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.main-header {
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: 0.4s ease-in-out;
+}
+
+.nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.search-box {
+    position: relative;
+    max-width: 280px;
+}
+
+.search-box input {
+    padding-left: 40px;
+    border-radius: 25px;
+}
+
+.search-box .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #777;
+}
+
+.dropdown-menu {
+    min-width: 180px;
+}
+
+.dropdown-item {
+    font-size: 16px;
+}
+
+.dropdown-item:hover {
+    background: #f8f9fa;
+}
+
+.imgLogo {
+    height: 70px;
+    width: 100px;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+.untree_co-section {
+    padding: 48px 0;
+}
+.sticky-header {
+    top: 0;
+    position: fixed;
+}
+
+@media (max-width: 992px) {
+    .search-box {
+        max-width: 100%;
+    }
+
+    .top-header {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .top-header .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.site-footer {
+    background: #014cab;
+}
+.copppy {
+    border-top: 1px solid #a3a3a3;
+    padding-top: 12px;
+}
+.hrr {
+    width: 59%;
+    font-size: 55px;
+    margin: auto;
+    color: #000000;
+    background: #c1c1c1;
+}
+/* Role Selection Styling */
+.role-selection {
+    display: flex;
+    justify-content: center;
+}
+
+.role-box {
+    width: 100px;
+    height: 100px;
+    margin-left: 31px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    border: 2px solid #ddd;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3sease-in-out;
+}
+
+.role-box i {
+    font-size: 24px;
+}
+
+.role-box h6 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.role-box:hover, .role-box.active {
+    border-color: #007bff;
+    background: #e9f2ff;
+}
+.forgot-password-section {
+    background: #f8f9fa;
+}
+
+
+.activeClass {
+    background: #307ded;
+    border-radius: 6px;
+    color: white;
+}
+.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007bff;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    z-index: 9999;
+}
+.chat-icon:hover {
+    background: #0056b3;
+}
+
+/* Chatbox */
+.chat-box {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 10000;
+}
+.chat-header {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.chat-body {
+    max-height: 250px;
+    overflow-y: auto;
+    padding: 10px;
+}
+.chat-footer {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+.chat-input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.send-chat {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.send-chat:hover {
+    background: #0056b3;
+}
+.close-chat {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Chat Messages */
+.chat-message {
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    max-width: 80%;
+}
+.user-message {
+    background: #007bff;
+    color: white;
+    align-self: flex-end;
+}
+.bot-message {
+    background: #f1f1f1;
+    color: black;
+    align-self: flex-start;
+}
+.btnDelete {
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 12px;
+}
